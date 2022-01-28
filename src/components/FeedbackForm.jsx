@@ -21,10 +21,10 @@ function FeedbackForm(props) {
     },[feedbackEdit]);
    
     const hanldeclick =(e)=>{
-        if(text ==''){
+        if(text ===''){
             setDisabled(true)
             setMessage(null)
-        }else if(text != '' && text.trim().length <=10){
+        }else if(text !== '' && text.trim().length <=10){
             setMessage('Text must be at least 10 character');
             setDisabled(true)
         }else{

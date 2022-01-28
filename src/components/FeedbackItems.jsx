@@ -6,9 +6,9 @@ function FeedbackItems(props) {
 
     const { handledelfeedback,editFeedback } = useContext(FeedbackContext)
 
-    const [rating, setRating] = useState(props.items.rating);
-    const [text, setText] = useState(props.items.text);
-    const [id, setId] = useState(props.items.id)
+    const [rating] = useState(props.items.rating);
+    const [text] = useState(props.items.text);
+    const [id] = useState(props.items.id)
 
  
     return (
